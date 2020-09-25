@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yelpcamp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <a href="/campgrounds/new">add new</a>
+    <h1>this is the campground indiaaaa</h1>
+    <% campgrounds.forEach(function(campground){ %>
+    <div>
+      <h4><%= campground.name %></h4>
+      <img src="<%= campground.image %>" />
+    </div>
+    <% }) %>
+  </body>
+</html>
