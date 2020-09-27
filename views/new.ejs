@@ -1,7 +1,83 @@
-<h1>create new camp</h1>
-<form action="/campgrounds" method="POST">
-  <input type="text" name="name" placeholder="enter name" />
-  <input type="text" name="image" placeholder="image url" />
-  <button>submitt!</button>
-</form>
-<a href="/campgrounds">go back!</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yelpcamp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h1
+      style="
+        margin-left: 330px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(230, 66, 167);
+      "
+    >
+      upload your new camp
+    </h1>
+
+    <form
+      action="/campgrounds"
+      method="POST"
+      style="margin-left: 400px; margin-top: 10px"
+    >
+      <container>
+        <input
+          type="text"
+          name="name"
+          placeholder="enter name"
+          style="
+            width: 30%;
+            margin-top: 10px;
+            height: 30px;
+            border-width: 3px;
+            font-weight: 400;
+          "
+        />
+      </container>
+      <br />
+      <container>
+        <input
+          type="text"
+          name="image"
+          placeholder="image url"
+          style="width: 30%; margin-top: 10px; margin-bottom;: 10px; height: 30px; border-width: 3px;font-weight: 400;"
+        />
+      </container>
+      <br />
+      <container>
+        <input
+          type="text"
+          name="discription"
+          placeholder="discription"
+          style="width: 30%; margin-top: 10px; margin-bottom;: 10px; height: 30px; border-width: 3px;font-weight: 400;"
+        />
+      </container>
+      <button
+        style="
+          background-color: rgb(201, 85, 139);
+          margin-top: 10px;
+          width: 30%;
+          font-weight: 700;
+          color: rgb(75, 241, 75);
+        "
+      >
+        submitt!
+      </button>
+    </form>
+
+    <a
+      href="/campgrounds"
+      style="
+        margin-left: 400px;
+        margin-top: 5px;
+        text-decoration: underline;
+        font-weight: 600;
+        color: rgb(238, 48, 174);
+      "
+      >go back!</a
+    >
+  </body>
+</html>
